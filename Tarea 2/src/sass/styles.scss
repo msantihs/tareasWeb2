@@ -1,0 +1,102 @@
+@import "colores";
+@import "mixins";
+
+
+html, body{
+    @include nomargin;
+    font-family: serif;
+}
+body{
+    height: 100%;
+}
+
+
+header,footer{
+    height: 80px;
+    width: 100%;
+    background-color: $color-primario;
+}
+
+main{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.hob{
+    text-align: center;
+    height: 30px;
+    width: 33%;
+    background-color: $color-fondo-hobbies;
+    float: left;
+    
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    > div{
+        @extend .hob;
+        background-color: lightgreen;
+        width: 25%;
+        height: 300px;
+    }
+    ::after{
+        @include superFix;
+    }
+}
+
+.content::after{
+    @include superFix;
+}
+
+#pag{
+    text-align: center;
+    color:black;
+}
+
+.separador{
+    background-color: $color-fondo-separador;
+    height: 60px;
+    border: solid 5px black;
+    text-align: center;
+}
+
+.content{
+    background-color: $color-fondo-content;
+    width: 100%;
+}
+
+table{
+    width: 80%;
+}
+
+#tablaman{
+    width: 100%;
+    border: solid 2px black;
+}
+
+img{
+    padding-top: 15px;
+    height: 200px;
+    width: 200px;
+}
+
+
+@include mid{
+    .container > div{
+        width: 50%;
+    }
+    .hob{
+        width: 50%;
+    }
+}
+
+@include small{
+    .container > div{
+        width: 99%;
+    }
+    .hob{
+        width: 99%;
+    }
+}
