@@ -1,0 +1,121 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+body{
+    height: 100%;
+}
+
+#cajita{
+    margin-top: -150px;
+    margin-left: -250px;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    height: 300px;
+    width: 500px;
+    background-color: green;
+}
+
+header,footer{
+    height: 80px;
+    width: 100%;
+    background-color: grey;
+}
+
+main{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.container{
+    width: 100%;
+}
+
+.container > div{
+    background-color: lightgreen;
+    width: 25%;
+    height: 300px;
+    float: left;
+    
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container > div:nth-child(5n){
+    float: left;
+}
+
+.container::after{
+    content: ""; /*tiene que tener content vacio al usar el after*/
+    display: table;
+    clear: both;
+}
+
+.content::after{
+    content: ""; /*tiene que tener content vacio al usar el after*/
+    display: table;
+    clear: both;
+}
+
+#pag{
+    text-align: center;
+    color:black;
+}
+
+.separador{
+    background-color: lightcyan;
+    height: 60px;
+    border: solid 5px black;
+    text-align: center;
+}
+
+.content{
+    background-color: lightgray;
+    width: 100%;
+}
+
+table{
+    width: 80%;
+}
+
+#tablaman{
+    width: 100%;
+    border: solid 2px black;
+}
+
+img{
+    padding-top: 15px;
+    height: 200px;
+    width: 200px;
+}
+
+.hob{
+    text-align: center;
+    height: 30px;
+    width: 33%;
+    background-color: bisque;
+    float: left;
+    
+    box-sizing: border-box;
+    text-align: center;
+}
+
+@media screen and (max-width:768px){
+    .container > div{
+        width: 50%;
+    }
+    .hob{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .container > div{
+        width: 99%;
+    }
+    .hob{
+        width: 99%;
+    }
+}
