@@ -1,6 +1,6 @@
 // las rutas 
 
-//GET https://newsapi.org/v2/everything?q={MAMADAABUSCAR}&apiKey={LAPINCHEKEY}
+//GET https://newsapi.org/v2/everything?q={COSAABUSCAR}&apiKey={LAKEY}
 
 const axios = require('axios')
 const express = require('express')
@@ -14,7 +14,6 @@ router.get('/',function(req,res){ //la pagina en general
 }) 
 
 router.get('/search', function(req,res){
-    //se supone que req.query va a traer la chingadera, pero quien sabe como 
     url = 'https://newsapi.org/v2/everything?q='+ req.query.filter +'&apiKey=' + apiKey
     axios.get(url)
     .then(response => { //ya que se obtenga la respuesta 
