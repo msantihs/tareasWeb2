@@ -1,0 +1,41 @@
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header, footer {
+    text-align: center;
+    height: 80px;
+    width: 100%;
+    background-color: grey;
+}
+
+#input{
+    width: 80%;
+    margin-top: 23px;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+.titulo{
+    font-size:x-large;
+}
+
+.autor{
+    font-style: italic;
+}
+
+.noticia{
+    border:solid 1px black;
+}
+
+.izq{
+    width: 80%;
+}
+
+.der{
+    width: 20%;
+}
