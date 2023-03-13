@@ -1,0 +1,21 @@
+<h2>lista noticias epic</h2>
+
+{{#each noticias}}
+    <div class="noticia">
+        <table>
+            <td class="izq">
+                <a href={{this.url}} target="_blank"><label class="titulo">{{this.title}}</label></a>
+                
+                <br>
+                <br>
+                <label class="autor">{{this.author}}</label>
+                <br>
+                <br>
+                <label class="descripcion"> {{this.description}}</li>
+            </td>
+            <td class="der">
+                <img src={{this.urlToImage}}>
+            </td>
+        </table>
+    </div>
+{{/each}}
