@@ -1,0 +1,23 @@
+//mixin define propiedades, al incluirlo es como si las escribieras ahi 
+@mixin nomargin{
+    margin: 0;
+    padding: 0;
+}
+
+@mixin superFix{
+    content: ""; 
+    display: table;
+    clear: both;
+}
+
+@mixin mid{
+    @media screen and (max-width: 768px){
+        @content;
+    }
+}
+
+@mixin small{
+    @media screen and (max-width: 500px){
+        @content;
+    }
+}
