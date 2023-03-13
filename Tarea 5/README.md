@@ -12,6 +12,7 @@ Tecnologías Utilizadas:
 - mongoose para acceso a la base de datos
 - Swagger para documentación 
 - dotenv para las variables de entorno 
+
 Cada tarea deberá contar, por lo menos, con las siguientes propiedades:
 - Título
 - Descripción
