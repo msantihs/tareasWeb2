@@ -1,0 +1,30 @@
+img{
+    padding-top: 15px;
+    height: 200px;
+    width: 200px;
+}
+
+
+.container{
+    ::after{
+        content: ""; /*tiene que tener content vacio al usar el after*/
+        display: table;
+        clear: both;
+    }
+    div{
+        background-color: lightgoldenrodyellow;
+        width: 25%;
+        height: 300px;
+        float: left;
+        
+        box-sizing: border-box;
+        text-align: center;
+    }
+    div:nth-child(5n){
+        float: left;
+    }
+}
+
+.separador{
+    background-color: lightseagreen;
+}
